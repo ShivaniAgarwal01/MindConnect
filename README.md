@@ -21,3 +21,7 @@ MindConnect is a full-stack platform designed to help individuals with mental he
    <username> → your PostgreSQL username (commonly postgres)
    <password> → your PostgreSQL password
    <your_database> → the name of your database (e.g., mindconnect)
+
+   npx prisma generate
+   npx prisma migrate dev --name init
+   npm run dev
