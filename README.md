@@ -16,11 +16,10 @@ MindConnect is a full-stack platform designed to help individuals with mental he
  2.Inside the backend/ directory, create a file named .env and add the following line:
    ```bash
    DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<your_database>?schema=public"
-
-   Replace the placeholders:
-   <username> → your PostgreSQL username (commonly postgres)
-   <password> → your PostgreSQL password
-   <your_database> → the name of your database (e.g., mindconnect)
+   MONGO_URI=mongodb://localhost:27017/your-database
+   JWT_SECRET=your_secret_key_here 
+   ACCESS_TOKEN_SECRET=your_access_token_secret_here
+   REFRESH_TOKEN_SECRET=your_refresh_token_secret_here  
 
    npx prisma generate
    npx prisma migrate dev --name init
